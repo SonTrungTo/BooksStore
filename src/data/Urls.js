@@ -12,4 +12,4 @@ export const RestUrls = {
 
 export const GraphQlUrl = `/graphql`;
 
-export const authUrl = `$/login`;
+export const authUrl = `/login`;
