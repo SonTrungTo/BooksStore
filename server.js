@@ -11,7 +11,7 @@ const auth = require("./authMiddleware");
 const history = require("connect-history-api-fallback");
 
 const fileName = process.argv[2] || "./data.js";
-const port = process.argv[3] || 3500;
+const port = process.env.PORT || 3500;
 
 let router = undefined;
 let graph = undefined;
