@@ -1,5 +1,0 @@
-build:
-    Docker:
-        web: Dockerfile
-run:
-    web: node server.js ./productionData.json process.env.PORT
