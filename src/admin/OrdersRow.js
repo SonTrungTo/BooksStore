@@ -14,6 +14,16 @@ export class OrdersRow extends Component {
             <td>{ this.props.order.id }</td>
             <td>{ this.props.order.name }</td>
             <td>{ this.props.order.email }</td>
+            <td> 
+                <ul>
+                { this.props.order.products.map(batch =>
+                    <li key={batch.product.id}>
+                        {batch.product.name}({batch.product.id}):
+                        x{batch.quantity}
+                    </li>
+                ) }
+                </ul>
+            </td>
             <td className="text-right">
                 <span>&euro;</span>{ this.calcTotal(this.props.order.products) }
             </td>
