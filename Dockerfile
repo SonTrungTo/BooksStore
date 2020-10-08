@@ -21,4 +21,4 @@ RUN npm install
 
 EXPOSE 80
 
-CMD ["node", "server.js", "./productionData.json", "process.env.PORT"]
+CMD ["node", "server.js", "./productionData.json", "$PORT"]
