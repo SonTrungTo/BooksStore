@@ -19,6 +19,6 @@ RUN echo 'package-lock=false' >> .npmrc
 
 RUN npm install
 
-EXPOSE process.env.PORT
+EXPOSE 80
 
 CMD ["node", "server.js", "./productionData.json", "process.env.PORT"]
