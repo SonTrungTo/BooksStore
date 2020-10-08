@@ -2,10 +2,8 @@ import React, { Component } from "react";
 
 export class CartDetailsRows extends Component {
 
-    handleChange = (quantity, product, event) => {
-        if (quantity >= 1) {
-            this.props.updateCartQuantity(product, event.target.value);   
-        }
+    handleChange = (product, event) => {
+        this.props.updateCartQuantity(product, event.target.value);
     };
 
     render() {
@@ -20,7 +18,7 @@ export class CartDetailsRows extends Component {
                         <td>
                             <input type="number" value={item.quantity}
                             onChange={(ev) =>
-                            this.handleChange(item.quantity, item.product, ev)} />
+                            this.handleChange(item.product, ev)} />
                         </td>
                         <td>{item.product.name}</td>
                         <td><span>&#8364;</span>{item.product.price.toFixed(2)}</td>
