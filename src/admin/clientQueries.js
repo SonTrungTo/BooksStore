@@ -9,7 +9,7 @@ export const ordersSummaryQuery = gql`
                 products {
                     quantity,
                     product {
-                        price
+                        price, name, id
                     }
                 }
             }

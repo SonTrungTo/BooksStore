@@ -19,7 +19,7 @@ export class OrdersRow extends Component {
                 { this.props.order.products.map(batch =>
                     <li key={batch.product.id}>
                         {batch.product.name}({batch.product.id}):
-                        x{batch.quantity}
+                        <span>&euro;</span>{batch.product.price}x{batch.quantity}
                     </li>
                 ) }
                 </ul>
