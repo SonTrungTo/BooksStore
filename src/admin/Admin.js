@@ -34,18 +34,18 @@ export default AuthWrapper(class extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-3 p-2">
+                    <div className="col-sm-3 p-2">
                         <ToggleLink to="/admin/orders">Orders</ToggleLink>
                         <ToggleLink to="/admin/products">Products</ToggleLink>
                         { this.props.isAuthenticated &&
                         <button className=
-                        "btn btn-secondary btn-block col-3 m-2 fixed-bottom"
+                        "btn btn-secondary btn-block col-sm-3 m-2 fixed-bottom"
                         onClick={ this.props.signout }>
                             Logout
                         </button>
                         }
                     </div>
-                    <div className="col-9 p-2">
+                    <div className="col-sm-9 p-2">
                         <Switch>
                             { !this.props.isAuthenticated &&
                             <Route component={ AuthPrompt } />
