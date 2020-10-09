@@ -41,5 +41,7 @@ It is implemented in Administration of products.
 * They can edit a product information.
 
 Thanks to JSONWebToken,  the administration is protected by username and password.
-Please send me an email if you want to test the capability of the administration
-section.
+For testing purpose,
+
+* Username: admin
+* Password: secret
